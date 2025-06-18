@@ -37,7 +37,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone <your-repository-url>
-cd Calendar
+cd Modern-Calendar
 ```
 
 ### 2. Install Dependencies
