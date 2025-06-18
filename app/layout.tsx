@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Lovy-tech | Smart Glasses OS",
-  description: "Advanced e-OS system for smart glasses with real-time performance tracking",
+  title: "A beautiful, modern calendar application",
+  description: "A beautiful, modern calendar application built with Next.js, React, and Tailwind CSS. This application provides an intuitive interface for managing events, meetings, and appointments with a stunning visual design.",
     generator: ''
 }
 
