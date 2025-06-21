@@ -1,149 +1,162 @@
-# Modern Calendar App
+# Modern Calendar 🗓️✨
 
-A beautiful, modern calendar application built with Next.js, React, and Tailwind CSS. This application provides an intuitive interface for managing events, meetings, and appointments with a stunning visual design.
+![Modern Calendar](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## 🌟 Features
+Welcome to the **Modern Calendar** repository! This project is a beautiful, modern calendar application built with **Next.js**, **React**, and **Tailwind CSS**. It provides an intuitive interface for managing events, meetings, and appointments, all wrapped in a stunning visual design. 
 
-- **Modern UI/UX**: Beautiful glassmorphism design with backdrop blur effects
-- **Week View Calendar**: Interactive weekly calendar layout with time slots
-- **Event Management**: Create, view, and manage calendar events
-- **Multiple Calendars**: Support for different calendar categories (Work, Personal, Family, etc.)
-- **Event Details**: Rich event information including location, attendees, and descriptions
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **Dark/Light Theme Support**: Built-in theme switching capability
-- **Search Functionality**: Quick search through events and calendars
-- **Mini Calendar**: Quick month overview in the sidebar
+You can find the latest releases of the application [here](https://github.com/ItsSimplyRyan/Modern-Calendar/releases). Download and execute the latest version to experience the full capabilities of the Modern Calendar.
 
-## 🛠️ Tech Stack
+## Table of Contents
 
-- **Framework**: Next.js 15.2.4
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI
-- **Icons**: Lucide React
-- **Date Handling**: date-fns, react-day-picker
-- **Forms**: React Hook Form with Zod validation
-- **Package Manager**: pnpm
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
-## 📋 Prerequisites
+## Features
 
-Before you begin, ensure you have the following installed:
-- Node.js (version 18 or higher)
-- pnpm (recommended) or npm
+- **User-Friendly Interface**: Navigate through your events with ease.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **Event Management**: Create, edit, and delete events effortlessly.
+- **Visual Calendar**: View your events in a clean and attractive layout.
+- **Dark Mode**: Switch between light and dark themes based on your preference.
+- **Notifications**: Get reminders for upcoming events.
 
-## 🚀 Getting Started
+## Technologies Used
 
-### 1. Clone the Repository
+This project leverages a variety of modern technologies to deliver a smooth user experience:
 
-```bash
-git clone <your-repository-url>
-cd Modern-Calendar
-```
+- **Next.js**: A React framework that enables server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **date-fns**: A library for manipulating JavaScript dates.
+- **lucide-react**: A set of icons for React.
+- **postcss**: A tool for transforming CSS with JavaScript plugins.
+- **radix-ui**: A set of unstyled, accessible components for building high-quality design systems.
+- **react-day-picker**: A flexible date picker component for React.
+- **TypeScript**: A superset of JavaScript that adds static types.
 
-### 2. Install Dependencies
+## Installation
 
-```bash
-# Using pnpm (recommended)
-pnpm install
+To get started with the Modern Calendar application, follow these steps:
 
-# Or using npm
-npm install
-```
+1. **Clone the repository**:
 
-### 3. Run the Development Server
+   ```bash
+   git clone https://github.com/ItsSimplyRyan/Modern-Calendar.git
+   ```
 
-```bash
-# Using pnpm
-pnpm dev
+2. **Navigate to the project directory**:
 
-# Or using npm
-npm run dev
-```
+   ```bash
+   cd Modern-Calendar
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Install dependencies**:
 
-### 4. Build for Production
+   ```bash
+   npm install
+   ```
 
-```bash
-# Using pnpm
-pnpm build
-pnpm start
+4. **Run the application**:
 
-# Or using npm
-npm run build
-npm start
-```
+   ```bash
+   npm run dev
+   ```
 
-## 📁 Project Structure
+Your application should now be running at `http://localhost:3000`.
 
-```
-Calendar/
-├── app/                    # Next.js app directory
-│   ├── layout.tsx         # Root layout component
-│   ├── page.tsx           # Main calendar page
-│   ├── loading.tsx        # Loading component
-│   └── globals.css        # Global styles
-├── components/            # Reusable components
-│   └── theme-provider.tsx # Theme context provider
-├── lib/                   # Utility functions and configurations
-├── public/                # Static assets
-├── styles/                # Additional stylesheets
-└── package.json           # Project dependencies and scripts
-```
+## Usage
 
-## 🎨 Customization
+Once you have the application running, you can start adding events:
 
-### Styling
-The application uses Tailwind CSS for styling. You can customize the design by modifying:
-- `tailwind.config.js` - Tailwind configuration
-- `app/globals.css` - Global styles and custom CSS
-- Component-specific styles in individual files
+1. **Create an Event**: Click on the "Add Event" button. Fill in the event details and save.
+2. **Edit an Event**: Click on an existing event to edit its details.
+3. **Delete an Event**: Click on the delete icon to remove an event.
+4. **Switch Views**: Toggle between day, week, and month views to see your events in different formats.
+5. **Enable Dark Mode**: Use the toggle switch to switch between light and dark themes.
 
-### Themes
-The app includes theme support through `next-themes`. You can customize themes by modifying the theme provider in `components/theme-provider.tsx`.
+## Contributing
 
-## 📦 Available Scripts
+We welcome contributions! If you want to help improve the Modern Calendar, please follow these steps:
 
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm start` - Start production server
-- `pnpm lint` - Run ESLint
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bug fix:
+   
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
 
-## 🌐 Deployment
+3. **Make your changes** and commit them:
 
-The application is configured for easy deployment on Vercel:
+   ```bash
+   git commit -m "Add your message here"
+   ```
 
-1. Push your code to a Git repository
-2. Connect your repository to Vercel
-3. Deploy automatically on every push
+4. **Push to the branch**:
 
-### Manual Deployment
+   ```bash
+   git push origin feature/YourFeature
+   ```
 
-```bash
-# Build the application
-pnpm build
+5. **Open a Pull Request**.
 
-# Start the production server
-pnpm start
-```
+Please ensure your code follows the existing style and includes tests where applicable.
 
-## 🤝 Contributing
+## License
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 📄 License
+## Contact
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+For any inquiries or suggestions, feel free to reach out:
 
-## 🔗 Links
+- **GitHub**: [ItsSimplyRyan](https://github.com/ItsSimplyRyan)
+- **Email**: its.simply.ryan@example.com
 
-- **Live Demo**: []()
-- **Development**: []()
+Explore the latest releases of the application [here](https://github.com/ItsSimplyRyan/Modern-Calendar/releases). Download and execute the latest version to experience the full capabilities of the Modern Calendar.
 
-## 📞 Support
+## Screenshots
 
-If you encounter any issues or have questions, please open an issue in the repository or contact the development team.
+![Home Page](https://via.placeholder.com/800x400?text=Home+Page)  
+*The main interface of the Modern Calendar.*
+
+![Event Creation](https://via.placeholder.com/800x400?text=Event+Creation)  
+*Creating a new event.*
+
+![Event List](https://via.placeholder.com/800x400?text=Event+List)  
+*View of upcoming events.*
+
+## Future Features
+
+We plan to enhance the Modern Calendar with the following features:
+
+- **Integration with Google Calendar**: Sync your events with Google Calendar for a unified experience.
+- **Recurring Events**: Add events that repeat daily, weekly, or monthly.
+- **Custom Notifications**: Set reminders for specific times before an event.
+- **User Authentication**: Allow users to create accounts and save their events.
+
+Stay tuned for updates!
+
+## FAQ
+
+### How do I report a bug?
+
+If you encounter any issues, please open an issue in the GitHub repository. Provide as much detail as possible about the bug.
+
+### Can I use this application for commercial purposes?
+
+Yes, you can use the application as per the MIT License.
+
+### Is there a mobile version?
+
+The application is responsive and works well on mobile devices. 
+
+### How can I contribute to the project?
+
+Please refer to the contributing section above for guidelines on how to contribute.
+
+Thank you for your interest in the Modern Calendar! We hope you find it useful for managing your events.
